@@ -11,9 +11,9 @@ function Navbar() {
                 src={Trophy}
                 alt="User"
                 />
-                  <span className="font-bold text-lg text-[#071D55]">Go Pro Upgrade Now</span>  
+                  <span className="font-bold text-lg text-blue-primary text-shadow-white">Go Pro Upgrade Now</span>  
             </div>
-            <span className="absolute top-0 right-4 p-6 bg-[#071D55] text-[#F2C94C]">$1</span>
+            <span className="absolute top-0 right-4 p-6 bg-blue-primary text-[#F2C94C]">$1</span>
         </div>
     );
 }

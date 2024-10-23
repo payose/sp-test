@@ -3,9 +3,17 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+ 
   theme: {
-    extend: {},
-  },
+    extend: {
+        colors: {
+            "blue-primary": "#071D55",
+            "blue-secondary": "#3556AB",
+           
+        },
+    },
+
+},
   plugins: [],
 }
   

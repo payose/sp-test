@@ -31,23 +31,18 @@ function Navbar() {
         ];
         setTasks(newTasks);
         localStorage.setItem('tasks', JSON.stringify(newTasks));
-        console.log(tasks)
         navigate("/")
 
     }
 
     // const editTask = (e) => {
-    //     e.preventDefault();
-    //     const newTasks = tasks.map(task => task.id === id? { ...task, isEditing: !task.isEditing} : task );
-    //     setTasks(newTasks);
-    //     localStorage.setItem('tasks', JSON.stringify(newTasks));
     // }
 
     return (
         <div className="">
-            <div className="w-full max-w-md bg-[#3556AB] text-white px-6 py-10">
+            <div className="w-full max-w-md bg-blue-secondary text-white px-6 py-10">
                 <div className="text-center">
-                    <h1 className="font-medium">Edit Task</h1>
+                    <h1 className="font-medium text-shadow">Edit Task</h1>
                 </div>
             </div>
 
@@ -65,10 +60,10 @@ function Navbar() {
             </div>
 
             <div  className="fixed bottom-3 w-full text-white p-4">
-                <div className="flex">
+                <div className="flex gap-3">
                     <button
                     type='button'
-                        className="bg-[#AB3535] border-2 border-[#720D0D p-3 rounded-md shadow-lg"
+                        className="button-shadow bg-[#AB3535] border-2 border-[#720D0D] p-3 rounded-md shadow-lg"
                     >
                         Delete
                     </button>
@@ -76,7 +71,7 @@ function Navbar() {
                     <button
                         type="submit"
                         onClick={createTask}
-                        className="flex-1 bg-[#3556AB] border-2 border-[#0D2972] p-3 rounded-md shadow-lg"
+                        className="button-shadow flex-1 bg-blue-secondary border-2 border-[#0D2972] p-3 rounded-md shadow-lg"
                     >
                         Save
                     </button>
@@ -86,7 +81,5 @@ function Navbar() {
     );
 }
 
-
-  
 export default Navbar;
   

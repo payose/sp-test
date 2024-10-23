@@ -40,7 +40,7 @@ function Home() {
 
             <Link to="/form" className="nav-item">
                 <button
-                    className="fixed bottom-3 right-10 bg-[#3556AB] border-2 border-[#123EB1] text-white p-4 rounded-full shadow-lg"
+                    className="button-shadow fixed bottom-3 right-10 bg-blue-secondary border-2 border-[#123EB1] text-white p-4 rounded-full shadow-lg"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
